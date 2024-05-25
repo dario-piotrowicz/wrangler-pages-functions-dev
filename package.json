@@ -1,13 +1,14 @@
 {
   "name": "wrangler-pages-functions-dev",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A vite plugin for handling pages functions requests in local dev mode",
   "type": "module",
   "main": "dist/index.js",
+  "keywords": ["wrangler", "cloudflare", "pages", "functions", "vite"],
   "scripts": {
     "build": "tsup",
     "build:watch": "tsup --watch",
-    "publish": "npm run build && npm publish"
+    "prepublish": "npm run build"
   },
   "files": [
     "dist"
