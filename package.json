@@ -1,6 +1,6 @@
 {
   "name": "wrangler-pages-functions-dev",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A vite plugin for handling pages functions requests in local dev mode",
   "type": "module",
   "main": "dist/index.js",

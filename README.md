@@ -25,3 +25,8 @@ export default defineConfig({
 ```
 
 You can preview or deploy you application with `wrangler pages` in the same exact way as you would without this plugin (this plugin only effects `vite dev` everything else works exactly the same as it would otherwise).
+
+## Examples
+
+- [React SPA hello-world example](https://github.com/dario-piotrowicz/wrangler-pages-functions-dev-react-spa-hello-world-example)\
+Very minimalistic example that shows how this plugin can be used to locally developer a react SPA applications alongside Pages Functions.
