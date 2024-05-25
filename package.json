@@ -1,0 +1,29 @@
+{
+  "name": "wrangler-pages-functions-dev",
+  "version": "0.0.1",
+  "description": "A vite plugin for handling pages functions requests in local dev mode",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "publish": "npm run build && npm publish"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "dario piotrowicz (dario.piotrowicz@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/http-proxy": "^1.17.14",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  },
+  "peerDependencies": {
+    "wrangler": "3.x"
+  }
+}
