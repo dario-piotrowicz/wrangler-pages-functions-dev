@@ -39,4 +39,4 @@ export async function spawnWranglerPagesDev({
 }
 
 /** The amount of time to wait for wrangler pages dev to emit its ready ipc message */
-const wranglerProcessStartTimeout = 3_000;
+const wranglerProcessStartTimeout = 7_000;
