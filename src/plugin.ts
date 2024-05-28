@@ -13,6 +13,7 @@ export function plugin(options: PluginOptions): Plugin<null> {
     name: "wrangler-pages-functions-dev",
     async configureServer(server) {
       const wranglerPagesDevOutput = await spawnWranglerPagesDev({
+        displayWranglerLogs: options.displayWranglerLogs ?? false,
         onWranglerRestart: () => {
           if (options.reloadOnPagesFunctionsChanges !== false) {
             server.hot.send({ type: "full-reload" });
@@ -66,6 +67,12 @@ export type PluginOptions = {
    * default: true
    */
   reloadOnPagesFunctionsChanges?: boolean;
+  /**
+   * Whether the logs from the underlying `wrangler pages dev` instance are to be displayed or not
+   *
+   * default: false
+   */
+  displayWranglerLogs?: boolean;
 };
 
 function getTestUrl(
